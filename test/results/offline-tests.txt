@@ -1,0 +1,316 @@
+No files changed, compilation skipped
+
+Ran 7 tests for test/AdversarialReview.t.sol:AdversarialReviewTest
+[PASS] testFuzz_RawABIHasExactPixelsAndZeroPadding(uint256) (runs: 256, μ: 6316033, ~: 6315159)
+Logs:
+  Bound result 4455
+
+[PASS] test_BoundedFailureModesDoNotCorruptOrRevertPayload() (gas: 32454254)
+[PASS] test_EvenOwnerContractCannotReconfigureThroughStaticCallback() (gas: 1116012)
+[PASS] test_EveryAssemblyAlignment() (gas: 8264405)
+[PASS] test_FactoryHasNoConfigurationAuthority() (gas: 911817)
+[PASS] test_RecursiveReadCannotExceedOuterSupplyBudget() (gas: 154640)
+[PASS] test_RejectsMalformedERC165AndInvalidInterfaceSupport() (gas: 2117788)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 6.95s (6.95s CPU time)
+
+Warning: the following cheatcode(s) are deprecated and will be removed in future versions:
+  lastCallGas(): replaced by `lastFrameGas`
+Ran 11 tests for test/Gas.t.sol:SelloutMachineGasTest
+[PASS] test_gasCollectionReplacement() (gas: 592780)
+Logs:
+  replacement selection call gas (cold): 42156
+
+[PASS] test_gasDeployment() (gas: 393866)
+Logs:
+  CREATE deployment gas (excludes transaction intrinsic gas): 387288
+
+[PASS] test_gasFirstCollectionSelection() (gas: 460324)
+Logs:
+  first selection call gas (cold): 56739
+
+[PASS] test_gasMaliciousSupplyIsBounded() (gas: 200939)
+Logs:
+  gas-bomb fallback payload call gas: 140599
+
+[PASS] test_gasPayload0() (gas: 90890)
+Logs:
+  supply: 0
+  cold payload call gas (includes caller ABI decoding): 45553
+  cold Machine execution gas (callee only): 37669
+
+[PASS] test_gasPayload1() (gas: 110741)
+Logs:
+  supply: 1
+  cold payload call gas (includes caller ABI decoding): 45493
+  cold Machine execution gas (callee only): 37609
+
+[PASS] test_gasPayload100() (gas: 110421)
+Logs:
+  supply: 100
+  cold payload call gas (includes caller ABI decoding): 45106
+  cold Machine execution gas (callee only): 37222
+
+[PASS] test_gasPayload10000() (gas: 88348)
+Logs:
+  supply: 10000
+  cold payload call gas (includes caller ABI decoding): 23065
+  cold Machine execution gas (callee only): 15181
+
+[PASS] test_gasPayload101() (gas: 110295)
+Logs:
+  supply: 101
+  cold payload call gas (includes caller ABI decoding): 45046
+  cold Machine execution gas (callee only): 37162
+
+[PASS] test_gasPayload5000() (gas: 99591)
+Logs:
+  supply: 5000
+  cold payload call gas (includes caller ABI decoding): 34309
+  cold Machine execution gas (callee only): 26425
+
+[PASS] test_gasPayload9999() (gas: 88475)
+Logs:
+  supply: 9999
+  cold payload call gas (includes caller ABI decoding): 23125
+  cold Machine execution gas (callee only): 15241
+
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 1.46ms (1.23ms CPU time)
+
+Ran 11 tests for test/ResponseValidation.t.sol:ResponseValidationTest
+[PASS] testFuzz_eachERC165StageRequiresExactWordAndLength(uint256,uint256,uint256) (runs: 1000, μ: 137825, ~: 140420)
+Logs:
+  Bound result 0
+  Bound result 86
+
+[PASS] testFuzz_supplyResponseLengthBeforeAndAfterSelection(uint256,uint256) (runs: 1000, μ: 2431320, ~: 2432996)
+Logs:
+  Bound result 123
+
+[PASS] test_eachERC165StageBoundaryMatrix() (gas: 2554143)
+[PASS] test_eachERC165StageChecksCanonicalBooleanAndExpectedClaim() (gas: 1575254)
+[PASS] test_eachERC165StageRejectsSideEffectsRevertAndGasExhaustion() (gas: 2100607)
+[PASS] test_ownerOriginDoesNotAuthorizeAnIntermediary() (gas: 256930)
+[PASS] test_payloadReadsSupplyExactlyOnceAndWritesNoStorage() (gas: 67591)
+[PASS] test_reselectingSameCollectionEmitsAccurateEventAndRevalidates() (gas: 2379949)
+[PASS] test_revertingWithExactlyOneSupplyWordIsNotASuccessfulRead() (gas: 4145930)
+[PASS] test_supplyCannotWriteLogsStorageOrTransientStorage() (gas: 8471730)
+[PASS] test_unsupportedCraftRejectedBeforeCallingHostileCollection() (gas: 65329)
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 7.92s (7.92s CPU time)
+
+Ran 6 tests for test/OfflineVesselCompatibility.t.sol:OfflineVesselCompatibilityTest
+[PASS] test_offlineAttachmentSupportsMachineABIAndEmptyCollection() (gas: 2093391)
+[PASS] test_offlineCollectionLifecycleNeedsOnlyOneAttachment() (gas: 12830130)
+[PASS] test_offlineDispatchPreservesUnsupportedCraftError() (gas: 15763)
+[PASS] test_offlineSVGLastWhitePixel9999() (gas: 207550139)
+[PASS] test_offlineSVGRowBoundary101() (gas: 226448773)
+[PASS] test_offlineUnauthorizedAttachmentAndConfigurationAreSeparateChecks() (gas: 76361)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 1.70s (1.70s CPU time)
+
+Ran 28 tests for test/SelloutMachine.t.sol:SelloutMachineTest
+[PASS] testFuzz_fullUintSupplyRange(uint256) (runs: 256, μ: 126556, ~: 126884)
+[PASS] testFuzz_payloadAgainstReference(uint256) (runs: 256, μ: 2853686, ~: 2844110)
+Logs:
+  Bound result 7275
+
+[PASS] testFuzz_rejectsEveryOtherCraft(uint256) (runs: 256, μ: 11191, ~: 11191)
+[PASS] testFuzz_unauthorizedConfiguration(address) (runs: 256, μ: 38969, ~: 38969)
+[PASS] test_collectionChangeAndEvents() (gas: 3205274)
+[PASS] test_factoryNeverReceivesConfigurationAuthority() (gas: 898290)
+[PASS] test_faultySupplyAfterSelectionFallsBackToWhiteAndRecovers() (gas: 23683894)
+[PASS] test_liveMintsAndBurnsNeedNoMachineTransaction() (gas: 7550250)
+[PASS] test_noTransferRenounceUpgradeOrEtherAcceptance() (gas: 106915)
+[PASS] test_payloadABIHasExactLengthAndZeroPadding() (gas: 83090970)
+[PASS] test_pixels0() (gas: 2576094)
+[PASS] test_pixels1() (gas: 2595982)
+[PASS] test_pixels100() (gas: 2601259)
+[PASS] test_pixels10000() (gas: 3143487)
+[PASS] test_pixels101() (gas: 2601280)
+[PASS] test_pixels5000() (gas: 2869753)
+[PASS] test_pixels9999() (gas: 3143555)
+[PASS] test_rejectsBadSupplyAtSelection() (gas: 916169)
+[PASS] test_rejectsInvalidERC165Responses() (gas: 2143346)
+[PASS] test_rejectsNonNFTAndMissingSupply() (gas: 325924)
+[PASS] test_rejectsZeroEOASelfAndPrecompile() (gas: 240205)
+[PASS] test_rejectsZeroOwner() (gas: 113034)
+[PASS] test_removedCollectionCodeFallsBackToWhite() (gas: 2521855)
+[PASS] test_supply10001IsClamped() (gas: 3143469)
+[PASS] test_supplyCallbackCannotChangeConfiguration() (gas: 860834)
+[PASS] test_supplyOverflowIsClamped() (gas: 3143852)
+[PASS] test_unconfiguredIsWhite() (gas: 2492120)
+[PASS] test_wordAndTailBoundaries() (gas: 27844843)
+Suite result: ok. 28 passed; 0 failed; 0 skipped; finished in 3.24s (3.24s CPU time)
+
+Ran 2 tests for test/SelloutMachineInvariant.t.sol:SelloutMachineInvariantTest
+[PASS] invariant_configurationAndImageAlwaysMatchActionHistory() (runs: 256, calls: 16384, reverts: 0)
+
+╭-----------------------+-----------------------+-------+---------+----------╮
+| Contract              | Selector              | Calls | Reverts | Discards |
++============================================================================+
+| SelloutMachineHandler | changeBehavior        | 3306  | 0       | 0        |
+|-----------------------+-----------------------+-------+---------+----------|
+| SelloutMachineHandler | changeSupply          | 3264  | 0       | 0        |
+|-----------------------+-----------------------+-------+---------+----------|
+| SelloutMachineHandler | invalidSelection      | 3305  | 0       | 0        |
+|-----------------------+-----------------------+-------+---------+----------|
+| SelloutMachineHandler | selectCollection      | 3205  | 0       | 0        |
+|-----------------------+-----------------------+-------+---------+----------|
+| SelloutMachineHandler | unauthorizedSelection | 3304  | 0       | 0        |
+╰-----------------------+-----------------------+-------+---------+----------╯
+
+Logs:
+  Bound result 1
+  Bound result 2
+  Bound result 0
+  Bound result 4
+  Bound result 0
+  Bound result 0
+  Bound result 2
+  Bound result 1
+  Bound result 1
+  Bound result 0
+  Bound result 2
+  Bound result 1
+  Bound result 1
+  Bound result 2
+  Bound result 2
+  Bound result 1
+  Bound result 0
+  Bound result 0
+  Bound result 3
+  Bound result 0
+  Bound result 2
+  Bound result 0
+  Bound result 7
+  Bound result 1
+  Bound result 0
+  Bound result 2
+  Bound result 101
+  Bound result 2
+  Bound result 2
+  Bound result 1
+  Bound result 1
+  Bound result 1
+  Bound result 1
+  Bound result 1
+  Bound result 2
+  Bound result 8
+  Bound result 2
+  Bound result 1
+  Bound result 0
+  Bound result 8
+  Bound result 2
+  Bound result 1
+  Bound result 1
+  Bound result 2
+  Bound result 0
+  Bound result 2
+  Bound result 0
+  Bound result 1
+  Bound result 2
+  Bound result 8
+  Bound result 2
+  Bound result 2
+  Bound result 2
+  Bound result 2
+  Bound result 0
+  Bound result 0
+  Bound result 1
+  Bound result 2
+  Bound result 1
+  Bound result 6
+  Bound result 2
+  Bound result 2
+  Bound result 0
+  Bound result 5
+  Bound result 2
+  Bound result 9990
+  Bound result 0
+  Bound result 2
+  Bound result 0
+  Bound result 2
+  Bound result 0
+  Bound result 2
+  Bound result 96
+  Bound result 1
+  Bound result 9361
+  Bound result 2
+  Bound result 7
+  Bound result 0
+  Bound result 2
+  Bound result 2
+  Bound result 1
+  Bound result 2
+  Bound result 0
+  Bound result 0
+  Bound result 1
+  Bound result 2
+  Bound result 9988
+  Bound result 2
+  Bound result 2
+  Bound result 0
+  Bound result 10001
+  Bound result 1
+  Bound result 2
+  Bound result 2
+  Bound result 2
+  Bound result 1
+  Bound result 0
+  Bound result 2
+  Bound result 2
+  Bound result 0
+  Bound result 0
+  Bound result 2
+  Bound result 2
+  Bound result 0
+  Bound result 6
+  Bound result 0
+
+[PASS] test_handlerExercisesReplacementBurnFailureRecoveryAndOldCollectionIsolation() (gas: 9790817)
+Logs:
+  Bound result 0
+  Bound result 0
+  Bound result 0
+  Bound result 0
+  Bound result 7
+  Bound result 0
+  Bound result 0
+  Bound result 0
+  Bound result 1
+  Bound result 1
+  Bound result 0
+  Bound result 0
+  Bound result 0
+  Bound result 0
+
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 37.74s (37.79s CPU time)
+
+╭------------------------------------------------+-----------------+-------+--------+--------+---------╮
+| src/SelloutMachine.sol:SelloutMachine Contract |                 |       |        |        |         |
++======================================================================================================+
+| Deployment Cost                                | Deployment Size |       |        |        |         |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+|                                         354726 |            1587 |       |        |        |         |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+|                                                |                 |       |        |        |         |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| Function Name                                  | Min             | Avg   | Median | Max    | # Calls |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| craftToPayload                                 |             308 | 25392 |  29279 | 132715 |    1199 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| mintProgress                                   |            2407 | 12175 |  10207 | 105253 |     555 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| mintedCount                                    |             648 | 12593 |  12213 | 105263 |    1374 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| name                                           |             423 |   423 |    423 |    423 |       2 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| owner                                          |             259 |   259 |    259 |    259 |      19 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| setTrackedCollection                           |           21783 | 34634 |  22828 | 147988 |   11554 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| supportsInterface                              |             191 |   191 |    191 |    191 |     633 |
+|------------------------------------------------+-----------------+-------+--------+--------+---------|
+| trackedCollection                              |             380 |  2379 |   2380 |   2380 |   11566 |
+╰------------------------------------------------+-----------------+-------+--------+--------+---------╯
+
+
+Ran 6 test suites in 46.50s (57.55s CPU time): 65 tests passed, 0 failed, 0 skipped (65 total tests)

@@ -1,0 +1,11 @@
+Compiling 6 files with Solc 0.8.26
+Solc 0.8.26 finished in 1.97s
+Compiler run successful!
+warning[reentrancy-events]: event emitted after an external call; reentrancy can reorder or fabricate logs that off-chain consumers rely on
+   ╭▸ src/SelloutMachine.sol:53:9
+   │
+53 │         emit TrackedCollectionUpdated(previous, newCollection);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/reentrancy-events
+
