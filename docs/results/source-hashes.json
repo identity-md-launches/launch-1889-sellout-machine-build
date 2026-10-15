@@ -1,0 +1,5 @@
+{
+  "src/SelloutMachine.sol": "07c4229fa2d52168158a0775e5b581622fbcfc0f6c3d95bf5c781ac138a5b48d",
+  "src/interfaces/IMachine.sol": "ca9fe8c401909dfdad6d78ea875c27c250af0f8eb30117a2e0ce30cfe597f1e6",
+  "foundry.toml": "2be983ac27df274b2c59d6205cfb9130af91e89c04ee6837559f50a401c74bdd"
+}

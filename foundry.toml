@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc = "0.8.26"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+bytecode_hash = "none"
+# Exercise real CREATE/CREATE2 bytecode and deployment gas in factory tests.
+dynamic_test_linking = false
+remappings = ["forge-std/=lib/forge-std/src/"]
+gas_reports = ["SelloutMachine"]
+
+[profile.default.fuzz]
+runs = 256
+seed = "0x70400acffe2a4602ecfd12d07e8d6076229abeecfafc6e78631ab193db2b3f92"
+
+# These tests require an explicitly supplied Ethereum mainnet fork.
+# The default suite needs neither network access nor environment variables.
+[profile.mainnet]
+test = "integration"
+
+[fmt]
+line_length = 110

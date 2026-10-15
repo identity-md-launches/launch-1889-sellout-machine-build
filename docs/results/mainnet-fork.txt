@@ -1,0 +1,85 @@
+Compiling 24 files with Solc 0.8.26
+Solc 0.8.26 finished in 822.42ms
+Compiler run successful!
+
+Warning: the following cheatcode(s) are deprecated and will be removed in future versions:
+  lastCallGas(): replaced by `lastFrameGas`
+Ran 11 tests for integration/VesselMainnet.t.sol:VesselMainnetTest
+[PASS] test_mainnetAuthorizedAttachmentAndUnconfiguredPayload() (gas: 1749377)
+Logs:
+  attachment plus routing assertion gas: 70904
+
+[PASS] test_mainnetCollectionChangeBurnAndFailureNeedNoReattachment() (gas: 7089040)
+[PASS] test_mainnetPayloadMilestonesAndGas() (gas: 14380246)
+Logs:
+  supply: 0
+  Vessel payload call gas (warm): 76522
+  Vessel payload execution gas (warm, callee only): 68713
+  supply: 1
+  Vessel payload call gas (warm): 81107
+  Vessel payload execution gas (warm, callee only): 68653
+  supply: 100
+  Vessel payload call gas (warm): 85369
+  Vessel payload execution gas (warm, callee only): 68266
+  supply: 101
+  Vessel payload call gas (warm): 89957
+  Vessel payload execution gas (warm, callee only): 68206
+  supply: 5000
+  Vessel payload call gas (warm): 83869
+  Vessel payload execution gas (warm, callee only): 57469
+  supply: 9999
+  Vessel payload call gas (warm): 77333
+  Vessel payload execution gas (warm, callee only): 46285
+  supply: 10000
+  Vessel payload call gas (warm): 81923
+  Vessel payload execution gas (warm, callee only): 46225
+  supply: 115792089237316195423570985008687907853269984665640564039457584007913129639935
+  Vessel payload call gas (warm): 86560
+  Vessel payload execution gas (warm, callee only): 46215
+
+[PASS] test_mainnetRejectsUnauthorizedAttachment() (gas: 48608)
+[PASS] test_mainnetSVG0() (gas: 475225771)
+Logs:
+  black pixels: 0
+  Vessel SVG call gas (includes existing renderer): 470553365
+  SVG bytes: 658122
+
+[PASS] test_mainnetSVG1() (gas: 475241120)
+Logs:
+  black pixels: 1
+  Vessel SVG call gas (includes existing renderer): 470548823
+  SVG bytes: 658116
+
+[PASS] test_mainnetSVG100() (gas: 474755718)
+Logs:
+  black pixels: 100
+  Vessel SVG call gas (includes existing renderer): 470071349
+  SVG bytes: 657522
+
+[PASS] test_mainnetSVG10000() (gas: 426452798)
+Logs:
+  black pixels: 10000
+  Vessel SVG call gas (includes existing renderer): 422513100
+  SVG bytes: 598122
+
+[PASS] test_mainnetSVG101() (gas: 474751221)
+Logs:
+  black pixels: 101
+  Vessel SVG call gas (includes existing renderer): 470066807
+  SVG bytes: 657516
+
+[PASS] test_mainnetSVG5000() (gas: 450815601)
+Logs:
+  black pixels: 5000
+  Vessel SVG call gas (includes existing renderer): 446508347
+  SVG bytes: 628122
+
+[PASS] test_mainnetSVG9999() (gas: 426457383)
+Logs:
+  black pixels: 9999
+  Vessel SVG call gas (includes existing renderer): 422517642
+  SVG bytes: 598128
+
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 5.72s (9.14s CPU time)
+
+Ran 1 test suite in 6.58s (5.72s CPU time): 11 tests passed, 0 failed, 0 skipped (11 total tests)

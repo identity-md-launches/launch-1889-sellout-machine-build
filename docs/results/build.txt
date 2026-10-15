@@ -1,0 +1,41 @@
+Compiling 25 files with Solc 0.8.26
+Solc 0.8.26 finished in 1.22s
+Compiler run successful!
+warning[reentrancy-events]: event emitted after an external call; reentrancy can reorder or fabricate logs that off-chain consumers rely on
+   ╭▸ src/SelloutMachine.sol:53:9
+   │
+53 │         emit TrackedCollectionUpdated(previous, newCollection);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/reentrancy-events
+
+No files changed, compilation skipped
+
+╭-----------------------+------------------+-------------------+--------------------+---------------------╮
+| Contract              | Runtime Size (B) | Initcode Size (B) | Runtime Margin (B) | Initcode Margin (B) |
++=========================================================================================================+
+| DeploymentFactoryMock | 1,776            | 1,804             | 22,800             | 47,348              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| InterfaceMock         | 593              | 761               | 23,983             | 48,391              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| MissingSupplyMock     | 187              | 213               | 24,389             | 48,939              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| ReviewCollection      | 1,537            | 1,565             | 23,039             | 47,587              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| ReviewFactory         | 1,768            | 1,796             | 22,808             | 47,356              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| SelloutMachine        | 1,384            | 1,555             | 23,192             | 47,597              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| SupplyMock            | 2,082            | 2,110             | 22,494             | 47,042              |
+|-----------------------+------------------+-------------------+--------------------+---------------------|
+| SupplyOnlyMock        | 76               | 102               | 24,500             | 49,050              |
+╰-----------------------+------------------+-------------------+--------------------+---------------------╯
+
+warning[reentrancy-events]: event emitted after an external call; reentrancy can reorder or fabricate logs that off-chain consumers rely on
+   ╭▸ src/SelloutMachine.sol:53:9
+   │
+53 │         emit TrackedCollectionUpdated(previous, newCollection);
+   │         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   │
+   ╰ help: https://getfoundry.sh/forge/linting/reentrancy-events
+
